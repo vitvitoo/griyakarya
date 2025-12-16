@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="griyakarya.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GRIYAKARYA - Produsen Furniture Sekolah dan Kantor Berkualitas">
+    <meta name="author" content="GRIYAKARYA">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>GRIYAKARYA - Furniture Sekolah & Kantor</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/CLAYPOT.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    
+    <link rel="stylesheet" href="assets/css/custom-griyakarya.css">
+
+    <style>
+      /* --- 1. PENGATURAN LOGO & UMUM --- */
+      .logo img { max-height: 50px; margin-right: 12px; }
+      .navbar-brand h2 { text-transform: uppercase; font-weight: 800; font-size: 24px; }
+      .product-item { margin-bottom: 30px; }
+      html { scroll-behavior: smooth; }
+
+      /* --- 2. WARNA HIJAU GRIYAKARYA (#004d40) UNTUK TOMBOL & LINK --- */
+      /* (Bagian pengaturan warna teks Banner sudah saya hapus agar kembali ke awal) */
+
+      /* Warna Tombol (Minta Penawaran, dll) */
+      .filled-button {
+          background-color: #004d40 !important; /* HIJAU TUA */
+          border-color: #004d40 !important;     /* HIJAU TUA */
+          color: #fff !important;
+          transition: all 0.3s;
+      }
+      
+      /* Efek saat tombol disentuh */
+      .filled-button:hover {
+          background-color: #00251e !important; 
+          border-color: #00251e !important;
+      }
+
+      /* Warna Link Teks (Lihat katalog lengkap >) */
+      .section-heading a {
+          color: #004d40 !important;
+      }
+
+      /* --- 3. STYLE KHUSUS FOOTER (TETAP RAPI DENGAN AKSEN HIJAU) --- */
+      footer {
+        background-color: #232323;
+        padding-top: 60px;
+        margin-top: 50px;
+        color: #fff;
+      }
+
+      footer h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #004d40; /* GARIS BAWAH HIJAU TUA */
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+
+      footer p {
+        color: #bbb;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      footer ul { padding: 0; list-style: none; }
+
+      footer ul.menu-list li a {
+        color: #bbb;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+        transition: all 0.3s;
+        text-decoration: none;
+      }
+
+      footer ul.menu-list li a:hover {
+        color: #004d40; /* HIJAU TUA SAAT DISENTUH */
+        padding-left: 5px;
+      }
+
+      /* Ikon Sosmed */
+      footer ul.social-icons li { display: inline-block; margin-right: 10px; }
+
+      footer ul.social-icons li a {
+        color: #232323;
+        background-color: #fff;
+        width: 35px; height: 35px;
+        display: inline-block; text-align: center; line-height: 35px;
+        border-radius: 50%;
+        transition: all 0.3s;
+      }
+
+      footer ul.social-icons li a:hover {
+        background-color: #004d40; /* HIJAU TUA SAAT DISENTUH */
+        color: #fff;
+      }
+
+      .sub-footer {
+        border-top: 1px solid #444;
+        margin-top: 30px;
+        padding-top: 20px; padding-bottom: 20px;
+        text-align: center;
+      }
+      /* --- PERBAIKAN UKURAN GAMBAR PRODUK (SKU) --- */
+      .product-item img {
+          width: 100%;             /* Lebar mengikuti kotak */
+          height: 250px;           /* Tinggi kita kunci di 250px (bisa diubah) */
+          object-fit: contain;       /* Gambar akan dipotong rapi (crop) agar pas kotak */
+          /* Gunakan 'object-fit: contain;' jika ingin gambar utuh tapi ada sisa ruang kosong */
+          border-radius: 5px;      /* Sedikit lengkungan di sudut gambar */
+      }
+      
+      .product-item {
+          border: 1px solid #eee;  /* Opsional: Memberi garis tipis batas kartu */
+          padding: 15px;           /* Opsional: Memberi jarak di dalam kartu */
+          border-radius: 10px;     /* Sudut kartu melengkung */
+          background: #fff;        /* Latar belakang putih */
+          height: 100%;            /* Agar tinggi kartu seragam */
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>GRIYA<em>KARYA</em></h2></a>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto" style="margin-left: auto !important;" >
+            <li class="nav-item">
+            <a class="nav-link" href="#katalog">Katalog Produk</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#hubungi">Kontak</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01" style="background-image: url('assets/images/karosel\ 2.jpg');">
+          <div class="text-content">
+            <h4>Kualitas Pendidikan Terbaik</h4>
+            <h2>Furniture Sekolah Ergonomis</h2>
+            <p style="color: white;">Meja dan kursi siswa yang dirancang untuk kenyamanan belajar jangka panjang.</p>
+          </div>
+        </div>
+         <div class="banner-item-02" style="background-image: url('assets/images/karosel\ 4.jpg');">
+          <div class="text-content">
+            <h4>Profesional & Modern</h4>
+            <h2>Solusi Interior Kantor</h2>
+            <p style="color: white;">Workstation, meja rapat, dan kursi kantor untuk produktivitas maksimal.</p>
+          </div>
+        </div>
+         <div class="banner-item-03" style="background-image: url('assets/images/karosel\ 1.jpg');">
+          <div class="text-content">
+            <h4>Harga Grosir Institusi</h4>
+            <h2>Pengadaan Skala Besar</h2>
+            <p style="color: white;">Siap melayani tender dan pengadaan langsung sekolah & dinas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="latest-products" id="katalog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Produk Terlaris</h2>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/meja siswa fs01.png" alt="Meja Siswa"></a>
+              <div class="down-content">
+                <a href="#"><h4>Set Meja Kursi Siswa</h4></a>
+                <p>Rangka besi kokoh, top meja HPL tahan gores.</p>
+                <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20Set%20Meja%20Kursi%20Siswa" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/ranjang susun.png" alt="Workstation"></a>
+              <div class="down-content">
+                <a href="#"><h4>ranjang susun</h4></a>
+                <p>barang kokoh.</p>
+                <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20Ranjang%20Susun" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/kursi kuliah.png" alt="kursi kuliah"></a>
+              <div class="down-content">
+                <a href="#"><h4>Kursi Kuliah</h4></a>
+                <p>Bahan kokoh, dan bantalan empuk.</p>
+                <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20kursi%20kuliah" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/kursi 397.png" alt="Kursi Kantor"></a>
+              <div class="down-content">
+                <a href="#"><h4>Kursi Staff 397</h4></a>
+                <p>Sandaran jaring (mesh) breathable, dudukan empuk.</p>
+               <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20Kursi%20Staff%20ergonomis" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/kursi 002.png" alt="kursi manager"></a>
+              <div class="down-content">
+                <a href="#"><h4>Kursi Manager 002</h4></a>
+                <p>dudukan empuk </p>
+                <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20kursi%20manager%20002" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/kursi 388.png" alt="kursi direktur"></a>
+              <div class="down-content">
+                <a href="#"><h4>Kursi Direktur 388</h4></a>
+                <p>kursi full cushion</p>
+                <a href="https://wa.me/6285168663811?text=Halo,%20saya%20mau%20minta%20penawaran%20untuk%20kursi%20direktur%20388" target="_blank" class="filled-button" style="padding: 5px 15px; font-size: 12px;">Minta Penawaran</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-features"id="tentang">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Mengapa Memilih GRIYAKARYA?</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>Mitra Terpercaya Institusi & Korporasi</h4>
+              <p>GRIYAKARYA berdedikasi menyediakan solusi furniture yang fungsional dan tahan lama.</p>
+              <ul class="featured-list">
+                <li><a href="#">Material Tahan Lama (Heavy Duty)</a></li>
+                <li><a href="#">Desain Ergonomis & Modern</a></li>
+                <li><a href="#">Harga Kompetitif untuk Pengadaan Besar</a></li>
+              </ul>
+              <a href="about.html" class="filled-button">Profil Perusahaan</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+             <img src="griyakarya.png" alt="Furniture Illustration" style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="call-to-action" id="hubungi">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h3>Butuh Penawaran Pengadaan Furniture?</h3>
+                  <p>Konsultasikan kebutuhan sekolah atau kantor Anda bersama tim GRIYAKARYA.</p>
+                </div>
+                  <div class="col-md-4">
+                    <a href="https://wa.me/6285168663811?text=Halo%20%20GRIYAKARYA,%20saya%20tertarik%20dengan%20produk%20Anda." target="_blank" class="filled-button">
+                       Hubungi WhatsApp Kami
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <footer>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-4 footer-item">
+            <h4>GRIYA<em>KARYA</em></h4>
+            <p>Produsen furniture sekolah dan kantor berkualitas. Kami mengutamakan kenyamanan, ergonomi, dan ketahanan produk untuk jangka panjang.</p>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/griyakarya.furniture/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://wa.me/6285168663811" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 footer-item">
+            <h4>Menu Cepat</h4>
+            <ul class="menu-list">
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#katalog">Katalog Produk</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#hubungi">Kontak Pemesanan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 footer-item">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p><i class="fa fa-map-marker"></i> &nbsp; Jl. Perum Pondok Mutiara Jl. Mutiara Tim. IV No.07 Blok T, Banjarbendo, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61225, Indonesia</p>
+              <p><i class="fa fa-envelope"></i> &nbsp; griyakaryafurniture.com</p>
+              <p><i class="fa fa-phone"></i> &nbsp; 0851-6866-3811</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sub-footer">
+              <p>Copyright &copy; 2025 GRIYAKARYA Furniture. <br>All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   <script src="assets/js/jquery.min.js"></script> 
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t){ if(! cleared[t.id]){ cleared[t.id] = 1; t.value=''; t.style.color='#fff'; } }
+    </script>
+  </body>
+</html>
