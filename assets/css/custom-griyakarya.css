@@ -1,0 +1,38 @@
+/* Simpan ini sebagai assets/css/custom-griyakarya.css */
+
+/* Ubah warna utama jadi Hijau Tua */
+a { color: #004d40; }
+a:hover { color: #00332a; }
+
+/* Navbar & Logo */
+.navbar .navbar-brand h2 em { color: #004d40; }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover { color: #004d40 !important; }
+
+/* Tombol */
+.filled-button {
+    background-color: #004d40 !important;
+    border-color: #004d40 !important;
+    color: #fff;
+}
+.filled-button:hover {
+    background-color: #00332a !important;
+}
+
+/* Judul */
+.section-heading h2, .page-heading h2 { color: #004d40; }
+.section-heading h2::after { background-color: #004d40; }
+
+/* Paksa semua kotak produk memiliki tinggi minimal yang sama */
+.product-item .down-content {
+    min-height: 240px; /* Sesuaikan angka ini sampai rapi */
+}
+
+/* Opsional: Agar gambar juga seragam tingginya */
+.product-item img {
+    height: 350px;
+    object-fit: cover; /* Agar gambar tidak gepeng */
+    width: 100%;
+}
+
+/* Footer */
+footer { background-color: #004d40; }
